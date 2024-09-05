@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: TTLakes;
+  color: #1b1c21;
+}
+@font-face {
+  font-family: TTLakes;
+  src: url(/fonts/TTLakes-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: TTLakes;
+  src: url(/fonts/TTLakes-Bold.ttf);
+  font-weight: 600;
+}
+.aside {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  min-height: 800px;
+  height: 100vh;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+}
+.aside-menu {
+  background-color: #ffffff;
+  padding: 18px 24px;
+}
+.aside__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aside__link {
+  position: relative;
+  right: 10px;
+}
+.buttons {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.buttons:hover {
+  /* filter: opacity(25%); */
+  transition: 0.5s;
+  box-shadow: 0px 0px 30px 0px rgba(255, 62, 121, 0.8);
+}
+.list__item:nth-child(2) {
+  margin: 0px 0px 0px -20px;
+}
+
+.aside-content__titles {
+  margin-left: 24px;
+  margin-bottom: auto;
+  margin-top: 46px;
+  padding-bottom: 20px;
+}
+.aside-content__item:nth-child(1) {
+  color: #7e7e82;
+}
+
+.aside-content__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.typography {
+  font-family: TTLakes;
+  font-size: 16px;
+  line-height: 24px;
+}
+.aside-content__item {
+  letter-spacing: -0.2px;
+  position: relative;
+}
+.aside-content__link:hover {
+  color: #7e7e82;
+  animation-duration: 0.5s;
+}
+.aside-content__link:focus {
+  color: #7e7e82;
+}
+.aside-content__link:focus::before {
+  color: #7e7e82;
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 32px;
+  background-color: #41f6d7;
+  top: -3px;
+  left: -24px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.aside-content__contact {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;  
+}
+.content-menu__list {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.aside-content__email {
+  margin-bottom: 12px;
+}
+.aside-content__phone-number {
+  font-family: TTLakes;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: #1b1c21;
+  font-weight: bold;
+}
+
+.languages__list {
+  display: flex;
+  padding: 40px 0px 32px 0px;
+  gap: 7px;
+}
+.languages__item__link {
+  transition: 0.5s;
+}
+.languages__item__link:hover {
+  color: #7e7e82;  
+}
+.languages__item:focus {
+  color: #7e7e82;
+}
